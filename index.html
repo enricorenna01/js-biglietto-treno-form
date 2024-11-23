@@ -19,7 +19,7 @@
                 <div class="col-12 text-center">
                     <h1>Calcolo del biglietto del treno</h1>
                 </div>
-                <form class="col-12">
+                <form class="col-12" id="calculator-form">
                     <!--Km-->
                     <div class="w-25 p-3">
                       <label for="km-number" class="form-label">Numero chilometri</label>
@@ -35,10 +35,12 @@
                     <!--/Età-->
                     
                     <!--Bottone calcolo-->
-                    <button type="button" class="btn btn-primary ms-3 mb-5">Esegui il calcolo</button>
+                    <button type="submit" class="btn btn-primary ms-3 mb-5">Esegui il calcolo</button>
                     <!--/Bottone calcolo-->
                   </form>
-                  <h3></h3>
+                  <div class="d-none" id="result-container">
+                    <h3 id="result"></h3>
+                  </div>
                 </div>
             </div>
         </div>
