@@ -12,7 +12,40 @@
 </head>
 
 <body>
-    <h1>Calcolo del biglietto del treno</h1>
+    <!--Corpo della pagina-->
+    <main class="py-5">
+        <div class="cointainer">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Calcolo del biglietto del treno</h1>
+                </div>
+                <form class="col-12">
+                    <!--Km-->
+                    <div class="w-25 p-3">
+                      <label for="km-number" class="form-label">Numero chilometri</label>
+                      <input type="number" class="form-control" id="km-number" placeholder="Inserire km">
+                    </div>
+                    <!--/Km-->
+
+                    <!--Età-->
+                    <div class="mb-3 w-25 p-3">
+                      <label for="user-age" class="form-label">Età</label>
+                      <input type="number" class="form-control" id="user-age" placeholder="Inserire età" min="1" max="110">
+                    </div>
+                    <!--/Età-->
+                    
+                    <!--Bottone calcolo-->
+                    <button type="button" class="btn btn-primary ms-3 mb-5">Esegui il calcolo</button>
+                    <!--/Bottone calcolo-->
+                  </form>
+                  <h3></h3>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <!--/Corpo della pagina-->
 
     <!--JS-->
     <script src="JS/main.js"></script>
